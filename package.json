@@ -1,0 +1,43 @@
+{
+  "name": "generate-node-api-ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "",
+  "author": "Mayc Rodrigues <maycrodriguess@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "start": "npm run env:prod && node ./build/index.js",
+    "env:prod": "cp ./environment/.env.prod .env && set NODE_ENV=prod",
+    "start:dev": "npm run env:dev && tsnd --transpile-only --respawn --ignore-watch node_modules src/index.ts",
+    "env:dev": "cp ./environment/.env.dev .env && set NODE_ENV=dev",
+    "build": "tsc",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "lint": "tslint ./src/**/*"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "compression": "^1.7.4",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^8.2.0",
+    "express": "^4.17.1",
+    "generate-password": "^1.5.1",
+    "helmet": "^4.1.0",
+    "morgan": "^1.10.0",
+    "nodemailer": "^6.4.11",
+    "typescript": "^4.0.2",
+    "uuidv4": "^6.2.3"
+  },
+  "devDependencies": {
+    "@types/bcryptjs": "^2.4.2",
+    "@types/compression": "^1.7.0",
+    "@types/cookie-parser": "^1.4.2",
+    "@types/cors": "^2.8.7",
+    "@types/express": "^4.17.7",
+    "@types/helmet": "^0.0.48",
+    "@types/morgan": "^1.9.1",
+    "ts-node": "^9.0.0",
+    "ts-node-dev": "^1.0.0-pre.60"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "files.encoding": "utf8",
+  "editor.tabSize": 2,
+  "files.insertFinalNewline": true,
+  "editor.wordWrapColumn": 140,
+  "editor.trimAutoWhitespace": true,
+  "files.exclude": {
+    "node_modules": true,
+    "yarn.lock": true,
+    "package-lock.json": true,
+    ".gitignore": true,
+    "tsconfig.json": true
+  }
+}
