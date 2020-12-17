@@ -11,9 +11,5 @@ jobs:
       - uses: bubkoo/release-github-action@v1
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          body: |
-            Changes in this Release
-            - First Change
-            - Second Change
-          draft: false
+          draft: true
           prerelease: false
