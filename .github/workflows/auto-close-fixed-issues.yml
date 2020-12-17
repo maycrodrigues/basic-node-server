@@ -2,7 +2,9 @@ name: "Fechando automaticamente as issues"
 
 on:
   pull_request:
-    types: [closed]
+    types:
+      - closed
+
 jobs:
   close:
     runs-on: ubuntu-latest
@@ -10,4 +12,4 @@ jobs:
       - uses: bubkoo/auto-close-fixed-issues@v1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          comment: 'This issue was closed by #{{ pr }}.'
+          comment: 'Essa issue foi fechada automaticamente pelo PR #{{ pr }}.'
