@@ -2,10 +2,7 @@ name: "Fechando automaticamente as issues"
 
 on:
   pull_request:
-    types:
-      - closed
-      - edited
-      - synchronize
+    types: [closed]
 
 jobs:
   close:
