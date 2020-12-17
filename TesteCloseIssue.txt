@@ -1,0 +1,1 @@
+Isso é um teste para validação de nomenclatura para PR e automaticamente fechar a Issue 1
