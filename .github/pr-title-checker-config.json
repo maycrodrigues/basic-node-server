@@ -1,6 +1,6 @@
 {
   "LABEL": {
-    "name": "O título do PR está fora do padrão, verifique novamente.",
+    "name": "título fora do padrão",
     "color": "FF3030"
   },
   "CHECKS": {
