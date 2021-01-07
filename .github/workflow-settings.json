@@ -6,7 +6,7 @@
     "trigger workflow",
     "update TOC"
   ],
-  "PROJECT": "Backlog",
+  "PROJECT": "basic-node-serve",
   "ISSUE_COLUMN": "To do",
   "PR_COLUMN": "In progress",
   "PR_BODY_TITLE": "## Changes",
