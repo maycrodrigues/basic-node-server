@@ -5,12 +5,12 @@
 > Numero da sprint
 
 ### Cliente testou?
-- [ ] sim
-- [ ] não
+- [ ] Sim
+- [ ] Não
 
 ### PO solicitou liberação?
-- [ ] sim
-- [ ] não
+- [ ] Sim
+- [ ] Não
 
 ### Teste Karma:
 > Cole aqui os prints dos testes unitários
