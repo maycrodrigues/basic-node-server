@@ -1,6 +1,6 @@
 {
   "name": "generate-node-api-ts",
-  "version": "1.0.12",
+  "version": "1.0.13",
   "main": "index.js",
   "repository": "",
   "author": "Mayc Rodrigues <maycrodriguess@gmail.com>",
