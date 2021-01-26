@@ -1,20 +1,20 @@
-name: "Criação de release"
+name: "Bump Version"
+
 on:
   push:
     branches:
-      - master
+      - "master"
+
 jobs:
-  publish:
+  bump-version:
+    name: "Bump Version on master"
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v1
-      - uses: phips28/gh-action-bump-version@master
+      - name: "Automated Version Bump"
+        id: version-bump
+        uses: "phips28/gh-action-bump-version@master"
+        with:
+          tag-prefix: ''
         env:
-            GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          target-branch: 'master'
-      - uses: bubkoo/release-github-action@v1
-        with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          draft: true
-          prerelease: false
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
